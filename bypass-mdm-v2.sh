@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Maintained fork: Rizwan Ali
+# Repository: https://github.com/rizwangaminations/bypass-mdm
+# Original project: Assaf Dori
+# License: MIT
 
 # Define color codes
 RED='\033[1;31m'
@@ -181,8 +186,9 @@ data_volume=$(echo "$volume_info" | cut -d'|' -f2)
 # Display header
 echo ""
 echo -e "${CYAN}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${CYAN}║  Bypass MDM By Assaf Dori (assafdori.com)   ║${NC}"
+echo -e "${CYAN}║       Bypass MDM - Rizwan Ali Fork          ║${NC}"
 echo -e "${CYAN}╚═══════════════════════════════════════════════╝${NC}"
+echo -e "${CYAN}Repository: https://github.com/rizwangaminations/bypass-mdm${NC}"
 echo ""
 success "System Volume: $system_volume"
 success "Data Volume: $data_volume"

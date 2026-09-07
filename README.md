@@ -1,12 +1,15 @@
-# Bypass MDM for macOS 💻
+# Bypass MDM for macOS
 
-![mdm-screen](https://raw.githubusercontent.com/assafdori/bypass-mdm/main/mdm-screen.png)
+![mdm-screen](./mdm-screen.png)
 
 A script to bypass Mobile Device Management (MDM) enrollment during macOS setup.
 
-## 🚨 Update: February 3, 2026
+Maintained fork by [Rizwan Ali](https://github.com/rizwangaminations).
+Original project by Assaf Dori.
 
-**Version 2 Now Available!** Due to the high number of requests and repreated issues reported, I've released a new version of the script with significant improvements:
+## Update: February 3, 2026
+
+**Version 2 is the default script.** It includes the following improvements over the original implementation:
 
 ### What's New in v2:
 
@@ -16,26 +19,26 @@ A script to bypass Mobile Device Management (MDM) enrollment during macOS setup.
 - **UID Conflict Detection** - Automatically finds available UIDs to avoid conflicts
 - **Better User Experience** - Color-coded output, progress indicators, and helpful feedback
 
-The instructions below use **v2 by default** (recommended). If you experience issues, you can still use the original version by replacing `bypass-mdm-v2.sh` with `bypass-mdm.sh` in the commands.
+The instructions below use **v2 by default**. If you experience issues, you can still use the original version by replacing `bypass-mdm-v2.sh` with `bypass-mdm.sh` in the commands.
 
 ---
 
-## ✨ Features
+## Features
 
-- **🔍 Smart Volume Detection** - Automatically detects system and data volumes regardless of custom names
-- **✅ Input Validation** - Validates usernames and passwords to prevent common errors
-- **🛡️ Comprehensive Error Handling** - Clear error messages guide you through any issues
-- **🎯 UID Conflict Resolution** - Automatically finds available user IDs to avoid conflicts
-- **📊 Real-time Progress** - Color-coded status messages show exactly what's happening
-- **🔄 Duplicate Prevention** - Checks for existing entries to avoid duplicates
+- **Smart Volume Detection** - Automatically detects system and data volumes regardless of custom names
+- **Input Validation** - Validates usernames and passwords to prevent common errors
+- **Comprehensive Error Handling** - Clear error messages guide you through any issues
+- **UID Conflict Resolution** - Automatically finds available user IDs to avoid conflicts
+- **Real-time Progress** - Color-coded status messages show exactly what's happening
+- **Duplicate Prevention** - Checks for existing entries to avoid duplicates
 
-## ⚠️ Prerequisites
+## Prerequisites
 
 - **It is strongly recommended to erase the hard drive prior to starting**
 - **It is recommended to reinstall macOS using an external flash drive**
 - **English language recommended** (not required for v2, but recommended)
 
-## 📋 Installation & Usage
+## Installation & Usage
 
 ### Step-by-Step Instructions
 
@@ -60,7 +63,7 @@ Follow these steps to bypass MDM enrollment during a fresh macOS installation:
 **5.** **Run the bypass script** - Copy and paste this command into Terminal:
 
 ```bash
-curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
+curl -L https://raw.githubusercontent.com/rizwangaminations/bypass-mdm/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
 ```
 
 **6.** **Volume Detection** - The script will automatically detect your volumes:
@@ -76,7 +79,7 @@ curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm-v
 - **Username**: Apple (default)
 - **Password**: 1234 (default)
 
-> 💡 **Tip:** The script validates your input and will prompt you to retry if there are issues
+> **Tip:** The script validates your input and will prompt you to retry if there are issues
 
 **9.** **Wait for Completion** - You'll see progress messages:
 
@@ -89,7 +92,7 @@ curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm-v
 
 ---
 
-### 🔄 Post-Installation Steps
+### Post-Installation Steps
 
 **11.** **Login** with the temporary account:
 
@@ -112,7 +115,7 @@ curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm-v
 - Go to **System Settings > Users and Groups**
 - Select the Apple profile and click the minus (−) button
 
-**17.** **🎉 Done!** You're MDM free!
+**17.** Done.
 
 ---
 
@@ -130,7 +133,7 @@ curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm-v
 - Try the original version (legacy, hardcoded volume names):
 
 ```bash
-curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
+curl -L https://raw.githubusercontent.com/rizwangaminations/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
 ```
 
 ### Permission Errors
@@ -173,30 +176,16 @@ chmod +x bypass-mdm.sh
 
 | Version            | Description                                       | Status             |
 | ------------------ | ------------------------------------------------- | ------------------ |
-| `bypass-mdm-v2.sh` | Enhanced version with auto-detection & validation | ✅ **Recommended** |
-| `bypass-mdm.sh`    | Original version with hardcoded volume names      | ⚠️ Legacy          |
+| `bypass-mdm-v2.sh` | Enhanced version with auto-detection & validation | Recommended |
+| `bypass-mdm.sh`    | Original version with hardcoded volume names      | Legacy      |
 
-### ❤️ Optional Contributions
+## Attribution
 
-Many people have reached out asking how to say thank you for saving their Mac. **This is completely optional and not expected!** If you'd like to contribute, crypto donations are appreciated.
+This is a maintained fork by Rizwan Ali. The original project was created by Assaf Dori and remains credited under the MIT license.
 
-People have forked this repository and put the script behind a pay-wall. I do not care at all. Once again, crypto contributions are not expected, but feel free if you want to.
+## Legal Disclaimer
 
-**Bitcoin (BTC):**
-
-```
-bc1qzguh4908r7wguz20ylzeggya9d38t6hega5ppf
-```
-
-**Monero (XMR):**
-
-```
-45RnFseY4gNZv58DvShz2KJEbx1EyaTtaMCDnU5th21KbRThWurjjK6iugEdq9wfc4Kbw3a7AAyqo6WnEmL1StAMJur8QJp
-```
-
-## ⚖️ Legal Disclaimer
-
-> **Important:** Although it's virtually impossible to detect that you've removed MDM (because it was never configured locally), be aware that your device's serial number will still appear in your organization's inventory system. This script prevents MDM from being configured locally, making the device unmanageable remotely.
+> **Important:** Your device's serial number may still appear in an organization's inventory system. This script prevents MDM from being configured locally, making the device unmanageable remotely.
 >
 > **Use responsibly and at your own risk.** This tool is intended for personal devices and should not be used to circumvent legitimate organizational policies without proper authorization.
 

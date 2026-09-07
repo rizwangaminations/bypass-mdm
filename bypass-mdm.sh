@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Maintained fork: Rizwan Ali
+# Repository: https://github.com/rizwangaminations/bypass-mdm
+# Original project: Assaf Dori
+# License: MIT
 
 # Define color codes
 RED='\033[1;31m'
@@ -10,7 +15,8 @@ CYAN='\033[1;36m'
 NC='\033[0m'
 
 # Display header
-echo -e "${CYAN}Bypass MDM By Assaf Dori (assafdori.com)${NC}"
+echo -e "${CYAN}Bypass MDM - maintained by Rizwan Ali${NC}"
+echo -e "${CYAN}Repository: https://github.com/rizwangaminations/bypass-mdm${NC}"
 echo ""
 
 # Prompt user for choice
